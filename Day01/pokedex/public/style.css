@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  background-color: black;
+}
+main {
+  margin: 10px !important;
+  padding: 10px;
+  color: yellowgreen;
+}
+main > h1 {
+  text-align: center;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.25rem !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 10px;
+  padding: 5px !important;
+  width: 14rem;
+  background: #4b3838;
+  display: grid;
+  justify-items: center;
+  border-radius: 5px !important;
+  border-top: 0.5px solid rgb(38, 235, 12);
+  border-bottom: 0.5px solid rgb(38, 235, 12);
+  box-shadow: 0px 5px 5px rgba(0, 150, 100, 0.5);
+  position: relative;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  font-weight: 500;
+}
+span.card--id {
+  background: #00ff00;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  width: 45px !important;
+  border-radius: 0px 0px 15px;
+  position: absolute;
+  top: 0;
+  left: 0px !important;
+}
+
+img.card--image {
+  width: 100px;
+}
+h1.card--name {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+span.card--details {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h1.card--name {
+  position: relative;
+  border-radius: 5px;
+  padding: 3px;
+}
+
